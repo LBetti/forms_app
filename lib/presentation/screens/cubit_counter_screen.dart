@@ -26,7 +26,8 @@ class _CubitCounterView extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: context.select((CounterCubit value) {
-            return Text('Cubit Counter: ${value.state.transactionCount}');
+            return Center(
+                child: Text('Cubit Counter: ${value.state.transactionCount}'));
           }),
           actions: [
             IconButton(
